@@ -17,12 +17,12 @@ public class Calculadora {
 		int soma = soma(a,b);
 		int subtracao = subtracao(a,b);
 		int multiplicaclao = multiplicacao(a,b);
-		int divisao = divisao(a,b);
+		float divisao = divisao(a,b);
 		
 		System.out.println("soma" + soma);
 		System.out.println("subtracao" + subtracao);
 		System.out.println("multiplicaclao" + multiplicaclao);
-		System.out.println("divisao" + divisao);
+		System.out.println("divisao" + (Float)divisao);
 	}
 	
 	
@@ -33,8 +33,8 @@ public class Calculadora {
 	public static int subtracao (int a, int b) {
 		return a - b;
 	}
-	public static int divisao (int a, int b) {
-		return a / b;
+	public static float divisao (int a, int b) {
+		return (float) a / b;
 	}
 	public static int multiplicacao (int a, int b) {
 		return a * b;
